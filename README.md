@@ -15,7 +15,7 @@
 ## 2. 快速启动（Web）
 
 ```bash
-cd /Users/xiaoye/Documents/轻量化项目
+cd your-project-directory
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -U pip
@@ -25,9 +25,9 @@ pip install -r requirements.txt
 export APP_AUTH_USER=doctor
 export APP_AUTH_PASS=123456
 
-# 推荐：模型缓存到大盘
+# 可选：设置模型缓存路径（推荐使用本地大盘）
 export HF_ENDPOINT=https://hf-mirror.com
-export HF_HOME=/mnt/data_3/yjt/qwen_model/hf_cache
+export HF_HOME=/path/to/your/model/cache
 
 python src/app_gradio.py
 ```
@@ -52,7 +52,7 @@ uvicorn src.api_server:app --host 0.0.0.0 --port 8000
 
 ```bash
 python src/train/prepare_iu_for_training.py \
-  --root /Users/xiaoye/Downloads/archive \
+  --root path/to/iu_dataset \
   --out-dir data/iu_train
 ```
 
@@ -140,7 +140,7 @@ bash scripts_run.sh
 - `src/bench/`：性能压测与多版本对比
 - `configs/`：训练、蒸馏、性能对比配置
 
-## 9. 合规说明
+## 8. 合规说明
 
 - 本项目仅用于课程/研究，不可替代医生诊断。
 - 医疗数据使用需遵守数据源协议与机构合规要求。
