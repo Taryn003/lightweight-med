@@ -1,0 +1,8 @@
+# 三方對比：4B 官方底模 vs 2B 官方底模 vs 蒸餾後 2B（路徑相對專案根目錄 lightweight-med）
+variants:
+  - name: qwen3_vl_4b_instruct
+    model_id: qwen/Qwen3-VL-4B-Instruct
+  - name: qwen3_vl_2b_instruct
+    model_id: qwen/Qwen3-VL-2B-Instruct
+  - name: student_distilled_2b
+    model_id: output/student_distilled_2b

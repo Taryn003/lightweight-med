@@ -1,0 +1,17 @@
+transformers>=4.51.0
+accelerate>=1.0.0
+torch>=2.2.0
+qwen-vl-utils>=0.0.10
+pillow>=10.0.0
+gradio>=4.44.0
+python-dotenv>=1.0.1
+
+torchvision>=0.17.0
+datasets>=2.20.0
+peft>=0.14.0
+rouge-score>=0.1.2
+sacrebleu>=2.4.0
+sentence-transformers>=3.0.0
+scikit-learn>=1.5.0
+pyyaml>=6.0.0
+bitsandbytes>=0.43.0

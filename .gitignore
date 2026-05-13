@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+output/
+data/iu_train/
+data/iu_xray/images/
+*.pt
+*.pth
+*.bin
+*.safetensors
+hf_cache/
+wandb/
+runs/

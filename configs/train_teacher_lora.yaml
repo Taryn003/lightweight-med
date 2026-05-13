@@ -1,0 +1,7 @@
+train: data/iu_train/train.jsonl
+val: data/iu_train/val.jsonl
+model_id: Qwen/Qwen3-VL-4B-Instruct
+out: output/teacher_lora
+epochs: 1
+batch_size: 1
+lr: 1e-4

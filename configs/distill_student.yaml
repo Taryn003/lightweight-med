@@ -1,0 +1,9 @@
+train: data/iu_train/train.jsonl
+teacher: output/teacher_lora
+student: Qwen/Qwen3-VL-2B-Instruct
+out: output/student_distilled
+epochs: 1
+batch_size: 1
+lr: 5e-5
+temperature: 2.0
+alpha_kd: 0.7

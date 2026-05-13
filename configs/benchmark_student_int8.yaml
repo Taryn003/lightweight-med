@@ -1,0 +1,10 @@
+# 蒸餾 2B：FP16（无量化） vs bitsandbytes INT8 加载 —— 延迟 / 显存 / 文本可对 scripts/compare_student_quant_text.sh 查看
+variants:
+  - name: student_distilled_2b_fp16
+    model_id: output/student_distilled_2b
+    env:
+      VLM_LOAD_IN_8BIT: "false"
+  - name: student_distilled_2b_int8
+    model_id: output/student_distilled_2b
+    env:
+      VLM_LOAD_IN_8BIT: "true"
